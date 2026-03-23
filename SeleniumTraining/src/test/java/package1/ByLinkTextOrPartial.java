@@ -1,0 +1,47 @@
+package package1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class ByLinkTextOrPartial {
+
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver=new EdgeDriver();
+		
+//		By LINKTEXT
+//		driver.get("https://demowebshop.tricentis.com/");
+//		Thread.sleep(3000);
+//		driver.findElement(By.linkText("Google+")).click();
+		
+		
+//		Thread.sleep(2000);
+//		driver.get("https://www.google.com/");
+//		Thread.sleep(2000);
+//		driver.findElement(By.linkText("Gmail")).click();
+		
+		
+		
+//		BY PARTIAL LINK TEXT
+//		driver.get("https://demowebshop.tricentis.com/");
+//		Thread.sleep(3000);
+//		driver.findElement(By.partialLinkText("gle+")).click();
+		
+		
+//		
+//		driver.get("https://www.flipkart.com/");
+//		Thread.sleep(3000);
+//		driver.findElement(By.xpath("//span[text()='✕']")).click();
+		
+		driver.get("https://demowebshop.tricentis.com/");
+		Thread.sleep(2000);
+		driver.findElement(By.className("ico-register")).click();
+		String string=driver.findElement(By.className("ico-register")).getText();
+		System.out.println(string);
+		
+		
+		
+
+	}
+
+}

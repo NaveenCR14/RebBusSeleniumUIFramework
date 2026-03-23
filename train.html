@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Automation Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 400px;
+            margin: 60px auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 6px;
+            margin-top: 5px;
+        }
+
+        /* FIXED RADIO & CHECKBOX ALIGNMENT */
+        .radio-group,
+        .checkbox-group {
+            margin-top: 5px;
+        }
+
+        .radio-group label,
+        .checkbox-group label {
+            display: inline-flex;
+            align-items: center;
+            margin-right: 15px;
+            font-weight: normal;
+        }
+
+        .radio-group input,
+        .checkbox-group input {
+            margin-right: 5px;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 15px;
+            padding: 8px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Automation Practice Form</h2>
+
+    <label>Full Name</label>
+    <input type="text" id="fullName">
+
+    <label>Email</label>
+    <input type="text" id="email">
+
+    <label>Password</label>
+    <input type="password" id="password">
+
+    <label>Gender</label>
+    <div class="radio-group">
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="other"> Other</label>
+    </div>
+
+    <label>Skills</label>
+    <div class="checkbox-group">
+        <label><input type="checkbox" value="java"> Java</label>
+        <label><input type="checkbox" value="selenium"> Selenium</label>
+        <label><input type="checkbox" value="python"> Python</label>
+    </div>
+
+    <label>Country</label>
+    <select id="country">
+        <option value="">Select Country</option>
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+        <option value="canada">Canada</option>
+    </select>
+
+    <button type="button">Submit</button>
+
+    <a href="https://www.google.com">Go to Google</a>
+
+</div>
+
+</body>
+</html>

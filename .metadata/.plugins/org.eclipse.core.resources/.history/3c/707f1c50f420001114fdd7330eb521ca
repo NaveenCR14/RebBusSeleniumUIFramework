@@ -1,0 +1,5 @@
+package com.orangeHRM.seleniumUI.objectRepsitory;
+
+public class LoginPage {
+
+}

@@ -1,0 +1,5 @@
+select.selectByIndex(1);
+		Thread.sleep(2000);
+
+		select.selectByContai0nsVisibleText("Volvo");
+		Thread.sleep(3000);

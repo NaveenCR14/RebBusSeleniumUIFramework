@@ -1,0 +1,43 @@
+package package1;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class TagName {
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver=new EdgeDriver();
+//		driver.get("https://www.google.com");
+//		Thread.sleep(2000);
+//		List<WebElement> allLinks=  driver.findElements(By.tagName("a"));
+//		for(WebElement element: allLinks) {
+//			System.out.println(element.getText());
+//		}
+//		
+//		for(WebElement element: allLinks) {
+//		if(element.getText().equalsIgnoreCase("store")) {
+//			element.click();
+//			break;
+//		}
+//		}
+		
+//		driver.get("https://demowebshop.tricentis.com/login");
+//		Thread.sleep(2000);
+//		driver.findElement(By.cssSelector("a[class='ico-login']")).click();
+		
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		Thread.sleep(2000);
+		driver.findElement(By.cssSelector("[name='username']")).sendKeys("Admin");
+		
+//		driver.get("https://demo.automationtesting.in/Register.html");
+//		Thread.sleep(2000);
+//		driver.findElement(By.xpath("//input[@ng-model=\"FirstName\"]")).sendKeys("Naveen");
+//		driver.findElement(By.xpath("//input[@ng-model=\"LastName\"]")).sendKeys("Kumar");
+//		Thread.sleep(2000);
+//		
+	}
+
+}

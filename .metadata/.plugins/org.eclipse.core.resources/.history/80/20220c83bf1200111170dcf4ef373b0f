@@ -1,0 +1,26 @@
+package package1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class ByLinkTextOrPartial {
+
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver=new EdgeDriver();
+//		driver.get("https://demowebshop.tricentis.com/");
+//		Thread.sleep(3000);
+//		driver.findElement(By.linkText("Google+")).click();
+		
+		
+//		Thread.sleep(2000);
+//		driver.get("https://www.google.com/");
+//		Thread.sleep(2000);
+//		driver.findElement(By.linkText("Gmail")).click();
+		driver.get("https://demowebshop.tricentis.com/");
+		Thread.sleep(3000);
+		driver.findElement(By.linkText("Goo")).click();
+
+	}
+
+}

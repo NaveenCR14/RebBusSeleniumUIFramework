@@ -1,0 +1,17 @@
+package SauceLabs;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+import org.testng.annotations.Test;
+
+public class ReadDataFromExcel {
+
+	@Test
+	public void test() throws FileNotFoundException {
+		FileInputStream  fis =new FileInputStream("F:\\OrangeHRM_TestData\\vacancies.xlsx\"");
+		
+	}
+	
+}

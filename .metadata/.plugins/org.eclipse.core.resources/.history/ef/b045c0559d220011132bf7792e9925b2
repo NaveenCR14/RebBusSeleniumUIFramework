@@ -1,0 +1,25 @@
+package SauceLabs;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.time.Duration;
+import java.util.Properties;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class LoginUsingPropertiesOR {
+	WebDriver driver;
+@Test
+public void login() throws IOException {
+	FileInputStream  fis =new FileInputStream("/SeleniumUiFrameworkOrangeHRM/src/main/resources/TestData");
+	Properties prop=new Properties();
+	prop.load(fis);
+	driver=new ChromeDriver();
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+	driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+	driver.findElement(By.name(prop.getProperty("username").split(":")[1])).sendKeys("Admin");
+}
+}

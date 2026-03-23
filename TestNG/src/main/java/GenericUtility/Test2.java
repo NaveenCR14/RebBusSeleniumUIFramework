@@ -1,0 +1,91 @@
+package GenericUtility;
+
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class Test2 {
+	WebDriver driver;
+
+	@Test(priority = 1)
+	public void login() {
+		driver = new EdgeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.get("https://www.saucedemo.com/");
+
+		driver.findElement(By.id("user-name")).sendKeys("standard_user");
+		driver.findElement(By.id("password")).sendKeys("secret_sauce");
+		driver.findElement(By.id("login-button")).click();
+		
+	}
+
+	// sort and add product to cart
+	@Test(priority = 2)
+	public void sortAndAddProd() {
+		WebElement option = driver.findElement(By.cssSelector("[class=\"product_sort_container\"]"));
+
+		Select select = new Select(option);
+		select.selectByValue("lohi");
+		System.out.println("Selected low to high");
+		// add products to cart
+		driver.findElement(By.id("add-to-cart-sauce-labs-onesie")).click();
+		// click on cart
+		driver.findElement(By.id("shopping_cart_container")).click();
+
+	}
+
+	@Test(priority = 3)
+	public void verifyProdAdded() {
+		String lowest = "Sauce Labs Onesie";
+
+		WebElement addedproduct = driver.findElement(By.xpath("//div[.='Sauce Labs Onesie']"));
+		WebElement price = driver.findElement(By.cssSelector("[class=\"inventory_item_price\"]"));
+
+		assertEquals(addedproduct.getText(), lowest);
+		assertTrue(price.getText().contains("$7.99"));
+
+		System.out.println("Validated price & Item Name");
+	}
+
+	@Test(priority = 4)
+	public void checkOut() {
+
+		driver.findElement(By.id("checkout")).click();
+
+		driver.findElement(By.id("first-name")).sendKeys("Naveen");
+		driver.findElement(By.id("last-name")).sendKeys("Kumar");
+		driver.findElement(By.id("postal-code")).sendKeys("123456");
+
+		driver.findElement(By.id("continue")).click();
+	}
+
+	@Test(priority = 4)
+	public void verifyOrderSummary() {
+
+		WebElement title = driver.findElement(By.cssSelector("[class=\"title\"]"));
+		WebElement price = driver.findElement(By.cssSelector("[class=\"summary_total_label\"]"));
+
+		Assert.assertEquals(title.getText(), "Checkout: Overview");
+		Assert.assertTrue(price.getText().contains("8.63"));
+
+		System.out.println("Order Validated Successfully");
+		
+		driver.findElement(By.id("finish")).click();	
+	}
+
+	@Test(priority = 10)
+	public void logoutAndQuit() {
+		driver.findElement(By.id("react-burger-menu-btn")).click();
+		driver.findElement(By.id("logout_sidebar_link")).click();
+		driver.quit();
+	}
+}

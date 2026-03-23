@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="F:\Seleniumm training\SeleniumUiFrameworkOrangeHRM\src\test\java\SauceLabs\MyInfoTest.java"/>
+			<item value="F:\Seleniumm training\JavaScriptExecutor\src\test\java\JavaScriptExecutor\ActionClass.java"/>
+			<item value="F:\Seleniumm training\HandlingSynchronization\src\test\java\Synchronization\Practice.java"/>
+			<item value="F:\Seleniumm training\HandlingSynchronization\src\test\java\Synchronization\ThreadClass.java"/>
+			<item value="F:\Seleniumm training\Popups\src\test\java\Popups\HiddenDivision.java"/>
+			<item value="F:\Seleniumm training\HandlingLoginAuthentication\src\test\java\AuthenticationPopup\LoginAuthPopup.java"/>
+			<item value="F:\Seleniumm training\JavaScriptPopupHandling\src\test\java\JavaScriptPopus"/>
+			<item value="F:\Seleniumm training\SelectClass\src\test\java\HandlingDropDown\IsMultiple.java"/>
+			<item value="F:\Seleniumm training\WebElementAPI\src\test\java\WebElementAPI\DropDown.java"/>
+			<item value="F:\Seleniumm training\SeleniumTraining\src\test\java\package1\RelativeLocator.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="com.demo.SeleniumGrid.in"/>
+			<item value="com.SeleniumUiFrameworkRecruitment.in"/>
+			<item value="comSeleniumUiFrameworkPIM.in"/>
+			<item value="com.panimalar.uiframework.orangehrm"/>
+			<item value="com.panimalar.in"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="SeleniumGrid"/>
+			<item value="SeleniumUiFrameworkRecruitment"/>
+			<item value="SeleniumUiFrameworkPIM"/>
+			<item value="SeleniumUiFrameworkOrangeHRM"/>
+			<item value="TestCases"/>
+			<item value="TestNG"/>
+			<item value="JavaScriptExecutor"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>
